@@ -1,0 +1,605 @@
+y {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #6a8ceb;
+z-index: 999;
+
+   
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none; 
+}
+html{
+    scroll-behavior: smooth;
+}
+@media only all and (max-width: 900px) {
+   .topnav a:not(:first-child) {display:none;} 
+    .topnav a.icon {float: right; display: block;
+}
+}
+
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+    position: absolute;left: 0; top: 0; 
+}
+.topnav.responsive a {
+    float: none; display:block; text-align: left;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    height: 700px;
+    img {
+        filter: brightness(50%);
+    }
+    
+}
+    
+
+.image-container .background-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع للصورة */
+}
+
+
+.welcome-section h2{
+position:absolute; 
+    top: 40px;
+    left:18%; 
+    transform: translate(-50%, -50%); /* استخدام التحويل لتوسيع النص بشكل دقيق */
+    font-size: 40px; 
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* ظل للنص لتحسين الرؤية */
+     color: #e4d7d7;
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    transition: opacity 2s ease, transform 2s ease; /* إضافة تأثير الانتقال */
+    opacity: 1;
+}
+.about-me-section {
+    padding: 50px;
+}
+
+.welcome-section hr {
+    position: absolute; 
+    left: 20%;
+    top: 10%;
+    transform: translate(-50%, -50%); 
+    border: 1px solid #5473c9; 
+        width: 38%; }
+    
+
+
+.single-line-tex {
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 300;
+    color: #ddd;
+    position: absolute; 
+    left: 8%;
+    top:24% ;
+    transform: translate(-50%, -50%); /* استخدام التحويل لتوسيع النص بشكل دقيق */
+    font-size: 24px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* ظل للنص لتحسين الرؤية */
+    
+}
+
+
+ p{
+    color: #ddd;
+    position: absolute; 
+    left: 30%;
+    top: 65%;
+    transform: translate(-40%, -40%); 
+    font-size: 18px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+    text-align: justify;
+}
+
+
+.single-line-tex{
+position: absolute; 
+    top: 30%;
+    left:9%;
+    transform: translate(-50%, -50%); /* استخدام التحويل لتوسيع النص بشكل دقيق */
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    border: 1px solid #5473c9; 
+        width: 15%; }
+        .about-me-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .hobby-section {
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        .hobbies{
+
+            font-size: 30px;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+        .hobby-coutainer {
+            display: flex;
+            flex-wrap: wrap;
+            flex:0 1 calc(30%-10px);
+            justify-content:center;
+            align-items: center;
+            
+        }
+        
+        .hobby-card {
+            background-color: #ccd6f3; 
+    border: 1px solid #f1e7e7; 
+    border-radius: 8px; 
+    margin: 20px; 
+    padding: 0px; 
+    text-align: center; 
+    flex:0 1 calc(30%-10px);
+    max-width: 900px;
+    height: 500px;
+    align-items: center;
+    width: 300px;
+    position: relative;
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    flex-wrap: wrap;
+        }
+        
+        
+        .hobby-card img {
+            width: 100%;
+            height:58%;
+            object-fit: cover;
+            
+        
+        
+        }
+        .hobby-card h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        text-align: center;
+        }
+        
+        
+        .hobby-card p {
+            margin: 10px 0;
+            word-spacing: 0;
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            color: #0f0f0f;
+            width: 100%; 
+            top: 380px;
+            text-align:right;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .hobby-card {
+                flex-basis: calc(100% - 20px); 
+            }}
+            
+            .hobby-card p {
+                font-size: 20px; 
+                line-height: 1.4; 
+                padding: 5px; 
+                overflow-wrap: break-word; 
+                width: 70%; 
+                margin: 6px 0;
+                text-align:left;
+            }
+    
+            
+            @media only all and (max-width: 900px) {
+                .welcome-section h2 {
+                    font-size: 30px; 
+                    top: 8%; 
+                    left: 50%; 
+                    transform: translate(-50%, 0);
+                }
+            
+                .single-line-tex {
+                    font-size: 16px; 
+                    top: 35%;
+                    left: 18%; 
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                }
+            
+                p {
+                    font-size: 16px; /* تصغير حجم الخط للفقرة */
+                    top: 40%; 
+                    left: 5%; 
+                    width: 90%; 
+                    transform: none; 
+                    line-height: 1.5;
+                    text-align: left; 
+                }
+            
+                .welcome-section hr {
+                    width: 80%; 
+                    left: 50%; 
+                    top: 13%; 
+                    transform: translate(-50%, -50%);
+                    border-width: 1px;
+                }
+            }
+            .skills h2{
+                font-size: 30px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: center;
+                margin-top: 0px;
+
+            }
+            
+         .skills p{
+            color: #0f0f0f;
+            top:2080px;
+            left: 10%;
+            text-align:justify;
+            width: 600px;
+            line-height: 1.5em;
+            height: calc(1 * 2);
+            overflow: hidden;
+        
+        }
+        .skills {
+            padding: 20px;
+        }
+        
+        .skills-description {
+            opacity: 0; /* إخفاء الفقرة بشكل افتراضي */
+            transform: translateY(20px); /* تحريك الفقرة لأسفل قليلاً */
+            transition: opacity 4s ease, transform 4s ease; /* إضافة تأثير الانتقال */
+        }
+        
+        .skills-description.visible {
+            opacity: 1; /* اجعل الفقرة مرئية */
+            transform: translateY(0); /* إعادة الفقرة إلى موضعها الأصلي */
+        }
+        
+        .skills-image img {
+                width: 60%;
+                height: auto;
+                position: relative;
+                top:50%;
+                left:25%; 
+                
+            }
+            .image img{
+                width: 25%;
+                left: 60%;
+                top:10px;
+            
+            }
+            @media only all and (max-width: 900px) {
+
+            .skills p{
+                color: #0f0f0f;
+                top:2920px;
+                left: 5%;
+                text-align:justify;
+                width: 400px;
+                line-height: 1.5em;
+                height: calc(1 * 2);
+                overflow: hidden;
+                font-size: 14px;
+    
+                }
+                .image img{
+                    width: 30%;
+                    left: 65%;
+                    top: 40px;
+                }
+                .table{
+                max-width: 50%;
+                }
+            
+            }
+            .top-hr{
+                margin-bottom: 20px;
+                
+            }
+            .books {
+                margin: 10% auto;
+            
+            }
+            .books h2{
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            @media only all and (max-width: 900px) {
+                .table img{
+                    width: 700px; 
+                }
+                .books {
+                    margin: 40% auto;
+                
+                }
+                .books {
+                    margin: 5% auto;
+                
+                }
+                
+            
+            }
+                .University h2{
+                    text-align: center;
+                font-size: 30px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+                .image-university img{
+                    width: 400px;
+                    position: absolute;
+                    right:10%;
+                
+                }
+                .paragraph p{
+                    color: #0f0f0f;
+                    top: 3750px;
+                left: 30%;
+                  position: absolute; 
+                    text-align:justify;
+                    width: 600px;
+                    line-height: 1.5em;
+                    height: calc(1 * 2);
+                    overflow: hidden;
+        
+
+                }
+                @media only all and (max-width: 900px) {
+                    .paragraph p{
+                        position:relative;
+                        top:500px;
+                        left: 7%;
+                    }
+                    .image-university img{
+                        width: 400px;
+                        position: absolute;
+                        right:20%;
+                    
+                    }
+                
+                }
+                .-hr{
+                    position: relative;
+                    top:490px;
+                    width: 50%;
+                }
+                .contact {
+                    max-width: 500px;
+                    margin: auto;
+                    margin-top: 500px;
+                    padding: 20px;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                }
+                
+                .contact h2 {
+                    text-align: center;
+                }
+                
+                .contact label {
+                    display: block;
+                    margin-top: 10px;
+                    font-weight: bold;
+                }
+                
+                .contact p {
+                    margin: 5px 0;
+                    font-size: 1em;
+                    color: #333;
+                    margin-top: 3700px;
+                    left: 540px;
+                
+                }
+                #phone{
+                margin-top: 3820px;
+            left:15%px;}
+            #email{
+                margin-top:3882px;
+            }
+            #github{
+                margin-top:3856px;
+                left: 42%;
+            }
+                .contact a {
+                    color: #4CAF50;
+                    text-decoration: none;
+                }
+                
+                .contact a:hover {
+                    text-decoration: underline;
+                }
+                
+                .contact hr {
+                    border: none;
+                    border-top: 1px solid #ddd;
+                    margin: 15px 0;
+                }
+                
+                .contact input, .contact textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-top: 5px;
+                    border-radius: 4px;
+                    border: 1px solid #ddd;
+                }
+                
+                .contact button {
+                    margin-top: 15px;
+                    padding: 10px;
+                    width: 100%;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1em;
+                    border-radius: 4px;
+                }
+                
+                .contact button:hover {
+                    background-color: #45a049;
+                }
+                @media only all and (max-width: 900px) {
+                    #phone{
+                        margin-top: 4390px;
+                    left:25%;}
+                    #email{
+                        margin-top:4445px;
+                        left: 25%;
+                    }
+                    #github{
+                        margin-top:4415px;
+                        left: 25%;
+                    }
+                }
+                @media only screen and (max-width: 480px) {
+
+                    
+                
+                    
+                    .welcome-section h2 {
+                        font-size: 20px;
+                        text-align: center;
+                        top: 2%;
+                        white-space:nowrap;
+
+
+                    }
+                    .welcome-section hr {
+                        width: 90%;
+                        left: 50%;
+                        top:5%;
+                        
+                    }
+                    .single-line-tex {
+                        font-size: 14px;
+                        top: 25%;
+                        left: 20%;
+                        transform: translate(-50%, -50%);
+                        width: 24%;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 14px;
+                        text-align: justify;
+                        width: 90%;
+                        left: 5%;
+                        top: 30%;
+                        line-height: 1.4;
+                    }
+                
+                    
+                    .hobby-card {
+                        flex-basis: 100%;
+                        margin: 10px 0;
+                        width: 100%;
+                        max-width: none;
+                    }
+                    
+                    .hobby-card h3 {
+                        font-size: 18px;
+                    }
+                    .hobby-card p {
+                        font-size: 14px;
+                        padding: 10px;
+                    }
+                
+                
+                    .skills h2 {
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                    .skills p {
+                        top: 20px;
+                        font-size: 8px;
+                        line-height: 1.4;
+                        width: 50%;
+                        left: 5%;
+                        text-align: justify;
+                    }
+                    .image img{
+                        width: 40%;
+                        left: 50%;
+                    }
+                    .table img{
+                       width: 200%;
+                       height: 100%;
+                       left:10%;
+
+                    }
+                    .books h2, .University h2 {
+                        font-size: 20px;
+                    }
+                    .image-university img {
+                        width: 100%;
+                        height: 50%;
+                        right: 5%;
+                        filter:grayscale(90%)brightness(50%)
+                    }
+                    .paragraph p {
+                        color: #e2e2ec;
+                        font-size: 1rem;
+                        text-align: justify;
+                        width: 90%;
+                        left: 5%;
+                        top: 10%;
+                    }
+                
+                
+                    .contact {
+                    
+                        width: 90%;
+                        margin: auto;
+                    }
+                  
+                    #phone{
+                    margin-top:3567px ;
+                    left:20;
+                    }
+                    #email{
+                        margin-top:3628px ;
+                        left:20; 
+                    }
+                    #github {
+                        margin-top:3600px ;
+                        left:20; 
+                    }
+                    .contact button {
+                        font-size: 14px;
+                        padding: 8px;
+                    }
+                }
+                
+                
